@@ -1,0 +1,330 @@
+body {
+    background-image: url('https://cdn.wallpapersafari.com/15/70/T42fjF.jpg');
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    filter: blur(2px); /* Adjust the blur radius as needed */
+    z-index: -1; /* Ensure the blurred background stays behind content */
+
+}
+
+/* Common styles for both media queries */
+.video-and-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+
+
+.custom-line {
+        border-top: 3px solid white;
+    }
+
+.trailer,
+.team {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.trailer{
+margin-right: 50px;
+}
+
+.team{
+  background-image: url("https://e0.pxfuel.com/wallpapers/440/807/desktop-wallpaper-purple-galaxy-dark-purple-galaxy.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+li{
+list-style-type: none;
+}
+
+
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    text-align: center;
+    font-family: "Calibri";
+}
+
+a {
+    color: #009FFA;
+    font-size: 30px;
+}
+
+/* Styles for mobile-specific */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+   .gallery img {
+        width: 350px;
+        height: 350px;
+
+    }
+
+
+
+    .content {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .trailer,
+    .team {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    .trailer iframe {
+        width: 350px;
+        height: 350px;
+    }
+
+    .line {
+        width: 15%;
+        height: 5px;
+        background-color: white;
+        margin: 10px;
+    }
+
+    .menu ul li {
+        padding: 10px;
+        text-align: center;
+
+
+    }
+
+    .menu {
+display: none;
+position: absolute;
+top: 60px;
+left: 0;
+background-color: black;
+width: 200px;
+}
+
+
+
+.menu ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-show {
+        display: block !important;
+    }
+
+
+    a{
+  top: 20px;
+  font-size:30px
+}
+
+
+}
+
+/* Styles for larger screens */
+@media only screen and (min-width: 769px) {
+    .content > div {
+        clear: both;
+        margin-bottom: 20px;
+    }
+
+
+
+
+.menu-hitbox:hover .line {
+    background-color: #D8D7D7;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 10px auto;
+}
+
+a:hover{
+color: #007DC4;
+}
+
+    .line {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        margin: 10px auto;
+    }
+
+    .line:hover {
+    background-color: #D8D7D7;
+}
+
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: black;
+        width: 300px;
+    }
+
+    .menu ul li {
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+
+    .menu ul li a :hover {
+    color: #D8D7D7
+    }
+
+.gallery{
+margin-left: 190px;
+margin-right: 190px
+
+}
+
+
+
+    .content {
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+        margin-left: 100px;
+    }
+
+    .content h2 {
+        color: white;
+    }
+
+    .content p {
+        color: white;
+    }
+
+    .menu-show {
+        display: block !important;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 60px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+
+
+    .gallery img {
+        width: 500px;
+        height: 500px;
+
+    }
+
+    .video-and-team-container > div {
+        margin-right: 50px;
+        justify-content: space-between; /* Distribute items evenly with space between them */
+
+    }
+
+
+    .trailer,
+    .team {
+        max-width: calc(50% - 20px); /* Adjust max-width to fit 50% of the container width minus padding */
+    }
+
+    #home {
+        display: block;
+    }
+
+    .overview {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .overview img {
+        margin-top: 60px;
+        margin-left: 10px;
+        width: 890px;
+        height: 580px;
+    }
+
+    .menu-hitbox {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .trailer iframe {
+        width: 900px;
+        height: 600px;
+    }
+    a{
+    color:#009FFA;
+    top: 20px;
+    font-size:50px
+}
+
+}
